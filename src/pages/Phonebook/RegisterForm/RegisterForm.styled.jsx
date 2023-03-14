@@ -2,6 +2,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { FaUserAlt } from 'react-icons/fa';
 import { RiLockPasswordFill } from 'react-icons/ri';
 import styled from 'styled-components';
+import { GiArchiveRegister } from 'react-icons/gi';
 
 export const FormStyled = styled.form`
   display: flex;
@@ -47,4 +48,10 @@ export const SvgStyledPass = styled(RiLockPasswordFill)`
   width: 30px;
   margin-right: 7px;
   margin-left: 26px;
+`;
+
+export const RegStyledSvg = styled(GiArchiveRegister)`
+  width: 200px;
+  height: 64px;
+  fill: #2493eb;
 `;

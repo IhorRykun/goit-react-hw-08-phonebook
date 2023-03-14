@@ -2,6 +2,7 @@ import {
   FormStyled,
   InputStyled,
   LableStyled,
+  RegStyledSvg,
   SvgStyled,
   SvgStyledPass,
   SvgSytledEmail,
@@ -10,6 +11,7 @@ import {
 export const RegisterForm = () => {
   return (
     <FormStyled>
+      <RegStyledSvg />
       <LableStyled>
         <SvgStyled />
         Name

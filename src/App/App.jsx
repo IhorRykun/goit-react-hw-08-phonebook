@@ -5,7 +5,7 @@ import { Home } from 'pages/home';
 import { Route, Routes } from 'react-router-dom';
 import { PhoneBook } from 'pages/Phonebook/Phonebook/Phonebook';
 import { RegisterForm } from 'pages/Phonebook/RegisterForm/RegisterForm';
-import { LoginForm } from 'pages/Phonebook/LoginForm/LoginFomr';
+import { LoginForm } from 'pages/Phonebook/LoginForm/LoginForm';
 import { NavNavigation, StyledContainerLink, StyledLink } from './App.styled';
 import { LoginLogautg } from 'components/LiginLogauth/LiginLogauth';
 

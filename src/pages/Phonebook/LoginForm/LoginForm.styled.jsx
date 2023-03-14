@@ -1,5 +1,6 @@
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaUserAlt } from 'react-icons/fa';
+import { BiLogIn } from 'react-icons/bi';
 import styled from 'styled-components';
 
 export const FormAuthor = styled.form`
@@ -38,4 +39,10 @@ export const SvgSytledEmail = styled(AiOutlineMail)`
   width: 30px;
   height: 17px;
   margin-right: 7px;
+`;
+
+export const StyledSvgLogin = styled(BiLogIn)`
+  width: 200px;
+  height: 64px;
+  fill: #2493eb;
 `;
