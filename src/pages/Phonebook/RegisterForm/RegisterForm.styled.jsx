@@ -31,6 +31,9 @@ export const InputStyled = styled.input`
   border: none;
   border-bottom: 2px solid #2493eb;
   outline: none;
+  &:hover {
+    outline: 2px solid #2493eb;
+  }
 `;
 
 export const SvgStyled = styled(FaUserAlt)`
