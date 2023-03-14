@@ -6,7 +6,8 @@ import { Route, Routes } from 'react-router-dom';
 import { PhoneBook } from 'pages/Phonebook/Phonebook/Phonebook';
 import { RegisterForm } from 'pages/Phonebook/RegisterForm/RegisterForm';
 import { LoginForm } from 'pages/Phonebook/LoginForm/LoginFomr';
-import { NavNavigation, StyledLink } from './App.styled';
+import { NavNavigation, StyledContainerLink, StyledLink } from './App.styled';
+import { LoginLogautg } from 'components/LiginLogauth/LiginLogauth';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -18,9 +19,12 @@ export const App = () => {
   return (
     <>
       <NavNavigation>
-        <StyledLink to="/contacts">контакти</StyledLink>
-        <StyledLink to="/register">реєстрація</StyledLink>
-        <StyledLink to="/login"> Логін</StyledLink>
+        <StyledContainerLink>
+          <StyledLink to="/contacts">Контакти</StyledLink>
+          <StyledLink to="/register">Реєстрація</StyledLink>
+          <StyledLink to="/login"> Логін</StyledLink>
+        </StyledContainerLink>
+        <LoginLogautg />
       </NavNavigation>
       <Routes>
         <Route path="/" element={<Home />} />

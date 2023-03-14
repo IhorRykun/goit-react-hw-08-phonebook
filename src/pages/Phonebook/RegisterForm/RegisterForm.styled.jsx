@@ -1,8 +1,9 @@
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaUserAlt } from 'react-icons/fa';
+import { RiLockPasswordFill } from 'react-icons/ri';
 import styled from 'styled-components';
 
-export const FormAuthor = styled.form`
+export const FormStyled = styled.form`
   display: flex;
   flex-direction: column;
   border: 3px solid #2493eb;
@@ -14,16 +15,18 @@ export const FormAuthor = styled.form`
   align-items: center;
 `;
 
-export const FormAuthorLable = styled.label`
+export const LableStyled = styled.label`
   color: black;
   margin-top: 30px;
+  display: flex;
+  align-items: center;
   &:first-child {
     margin-top: 0;
   }
 `;
 
-export const FormAuthorInput = styled.input`
-  margin-left: 20px;
+export const InputStyled = styled.input`
+  margin-left: 30px;
   border: none;
   border-bottom: 2px solid #2493eb;
   outline: none;
@@ -38,4 +41,10 @@ export const SvgSytledEmail = styled(AiOutlineMail)`
   width: 30px;
   height: 17px;
   margin-right: 7px;
+`;
+
+export const SvgStyledPass = styled(RiLockPasswordFill)`
+  width: 30px;
+  margin-right: 7px;
+  margin-left: 26px;
 `;

@@ -14,4 +14,8 @@ code {
     monospace;
 }
 
+p {
+  color: #2493eb;
+}
+
 @import-normalize;
