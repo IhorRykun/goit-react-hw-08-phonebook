@@ -1,11 +1,3 @@
-// import { configureStore } from '@reduxjs/toolkit';
-// import { bookReducer } from '../redux/phonebook/phonebookSlice';
-
-// export const store = configureStore({
-//   reducer: {
-//     book: bookReducer,
-//   },
-// });
 
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import {
