@@ -10,7 +10,7 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { bookReducer } from './Phonebook/PhonebookSlice';
+import { bookReducer } from './phonebook/phonebookSlice';
 import { authReducer } from './Auth/AuthSlice';
 
 const middleware = [

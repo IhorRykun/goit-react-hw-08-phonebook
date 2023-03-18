@@ -1,8 +1,7 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { isFilter } from 'Redux/Phonebook/PhonebookSlice';
+import { isFilter } from 'Redux/phonebook/phonebookSlice';
 
 export function Filter() {
   const dispatch = useDispatch();

@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
@@ -9,8 +8,8 @@ import {
   FormContact,
   BtnSubmit,
 } from './Contacts.styled';
-import { addContact } from '../../Redux/Phonebook/PhonebookOperation';
-import { getStoreContacts } from 'Redux/Phonebook/PhonebookSlice';
+import { addContact } from '../../Redux/phonebook/phonebookOperation';
+import { getStoreContacts } from 'Redux/phonebook/phonebookSlice';
 
 export function Contacts() {
   const [name, setName] = useState('');
