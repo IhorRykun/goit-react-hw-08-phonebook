@@ -1,25 +1,24 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import css from '../Filter/Filterds.module.css';
 import { useDispatch } from 'react-redux';
-import { isFilter } from 'Redux/phonebook/phonebookSlice';
+import { isFilter } from 'redux/phonebook/phonebookSlice';
 
-
-
-export const Filter = () => {
+export function Filter() {
   const dispatch = useDispatch();
 
   return (
     <div>
-      <p>Find contacts by name</p>
-      <input
-        className={css.input}
-        type="text"
-        onChange={e => dispatch(isFilter(e.target.value))}
-      />
+      <h3>Find contact by Name</h3>
+      <label>
+        <input
+          type="text"
+          onChange={event => dispatch(isFilter(event.target.value))}
+        ></input>
+      </label>
     </div>
   );
-};
+}
 
 Filter.propTypes = {
-  onInput: PropTypes.func,
+  props: PropTypes.object,
 };
