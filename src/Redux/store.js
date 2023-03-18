@@ -11,7 +11,7 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { bookReducer } from './phonebook/phonebookSlice';
-import { authReducer } from './Auth/AuthSlice';
+import { authReducer } from './Auth/authSlice';
 
 const middleware = [
   ...getDefaultMiddleware({
