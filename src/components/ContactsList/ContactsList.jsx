@@ -1,13 +1,12 @@
-
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { fetchContacts } from '../../Redux/phonebook/phonebookOperation';
+import { fetchContacts } from '../../Redux/Phonebook/PhonebookOperation';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   getStoreContacts,
   getStoreFilter,
   getLoading,
-} from '../../Redux/phonebook/phonebookSlice';
+} from '../../Redux/Phonebook/PhonebookSlice';
 import { Loader } from 'components/Loader/Loader';
 import {
   ListContact,
@@ -16,7 +15,7 @@ import {
   NameCont,
   BtnDelete,
 } from './ContactsList.styled';
-import { deleteContact } from '../../Redux/phonebook/phonebookOperation';
+import { deleteContact } from '../../Redux/Phonebook/PhonebookOperation';
 
 export const ContactsList = () => {
   const contactsGallery = useSelector(getStoreContacts);

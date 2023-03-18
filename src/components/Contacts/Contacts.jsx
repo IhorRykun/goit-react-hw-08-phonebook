@@ -9,8 +9,8 @@ import {
   FormContact,
   BtnSubmit,
 } from './Contacts.styled';
-import { addContact } from '../../Redux/phonebook/phonebookOperation';
-import { getStoreContacts } from 'Redux/phonebook/phonebookSlice';
+import { addContact } from '../../Redux/Phonebook/PhonebookOperation';
+import { getStoreContacts } from 'Redux/Phonebook/PhonebookSlice';
 
 export function Contacts() {
   const [name, setName] = useState('');

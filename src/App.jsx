@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -8,7 +7,7 @@ import { Register } from './pages/Register';
 import { Login } from './pages/Login/Login';
 import { PhoneBook } from 'pages/PhoneBook';
 import { useAuth } from 'hooks';
-import { refreshUser } from 'Redux/auth/authOperation';
+import { refreshUser } from 'Redux/Auth/AuthOperation';
 import { RestrictedRoute } from './components/RestrictedRoute';
 import { PrivateRoute } from './components/PrivateRoute';
 import { Loader } from 'components/Loader/Loader';

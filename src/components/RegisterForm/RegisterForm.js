@@ -1,6 +1,6 @@
 
 import { useDispatch } from 'react-redux';
-import { register } from '../../Redux/auth/authOperation';
+import { register } from '../../Redux/Auth/AuthOperation';
 import {
   ButtonStyled,
   FormStyled,

@@ -1,4 +1,3 @@
-
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import {
   persistStore,
@@ -11,8 +10,8 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { bookReducer } from './phonebook/phonebookSlice';
-import { authReducer } from './auth/authSlice';
+import { bookReducer } from './Phonebook/PhonebookSlice';
+import { authReducer } from './Auth/AuthSlice';
 
 const middleware = [
   ...getDefaultMiddleware({

@@ -1,6 +1,6 @@
 
 import { useDispatch } from 'react-redux';
-import { logIn } from '../../Redux/auth/authOperation';
+import { logIn } from '../../Redux/Auth/AuthOperation';
 
 import {
   ButtonStyled,
