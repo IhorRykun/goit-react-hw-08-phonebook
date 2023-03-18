@@ -3,7 +3,7 @@ import {
   selectUser,
   selectIsLoggedIn,
   selectIsRefreshing,
-} from '../Redux/Auth/authSlice';
+} from '../Redux/Auth/AuthSlice';
 
 export const useAuth = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
