@@ -10,7 +10,9 @@ export const PhoneBook = styled.div`
   padding: 20px;
   width: 256px;
   height: 100%;
-  border: 2px solid black;
+  border: 3px solid #2493eb;
+  margin: 0 auto;
+  align-items: center;
 `;
 
 export const Label = styled.label`
@@ -20,9 +22,15 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 150px;
+  margin-left: 20px;
+  border: none;
+  border-bottom: 2px solid #2493eb;
+  outline: none;
+  margin-bottom: 20px;
+
+  &:hover {
+    outline: 2px solid #2493eb;
+  }
 `;
 
 export const FormContact = styled.form`
@@ -32,15 +40,16 @@ export const FormContact = styled.form`
 
 export const BtnSubmit = styled.button`
   width: 100px;
-  padding: 5px;
-  background-color: ${theme.colors.btnBackground};
-  border: none;
-  color: ${theme.colors.btnColorSweet};
+  height: 32px;
+  margin-left: 50px;
   cursor: pointer;
-  :hover,
-  :focus {
-    background-color: ${theme.colors.accentBackground};
-    color: ${theme.colors.btnColorDarc};
+  color: #2493eb;
+  border: 2px solid #2493eb;
+  border-radius: 25px;
+  background-color: white;
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: green;
   }
-  border-radius: ${theme.radii.normal};
 `;
