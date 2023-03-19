@@ -18,3 +18,4 @@ export const AuthNavLink = styled(NavLink)`
     background-color: #2493eb;
   }
 `;
+

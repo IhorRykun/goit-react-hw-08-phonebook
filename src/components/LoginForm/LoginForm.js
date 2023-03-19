@@ -1,6 +1,6 @@
+import { RegStyledSvg } from 'components/RegisterForm/RegisterForm.styled';
 import { useDispatch } from 'react-redux';
-import { logIn } from '../../Redux/Auth/AuthOperationr';
-
+import { logIn } from '../../Redux/Auth/AuthOperation';
 import {
   ButtonStyled,
   FormAuthor,
@@ -27,19 +27,18 @@ export const LoginForm = () => {
   };
 
   return (
-    <FormAuthor nSubmit={handleSubmit} autoComplete="off">
+    <FormAuthor onSubmit={handleSubmit} autoComplete="off">
       <StyledSvgLogin />
-      <FormAuthorLable>
-        <SvgStyled />
-        Name
-        <FormAuthorInput type="text" />
-      </FormAuthorLable>
       <FormAuthorLable>
         <SvgSytledEmail />
         Email
-        <FormAuthorInput type="email" />
+        <FormAuthorInput type="email" name="email" />
       </FormAuthorLable>
-      <ButtonStyled type="submit">Log in</ButtonStyled>
+      <FormAuthorLable>
+        <SvgStyled /> Password
+        <FormAuthorInput type="password" name="password" />
+      </FormAuthorLable>
+      <ButtonStyled type="submit">Log In</ButtonStyled>
     </FormAuthor>
   );
 };

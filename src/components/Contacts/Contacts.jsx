@@ -7,6 +7,7 @@ import {
   Input,
   FormContact,
   BtnSubmit,
+  Container,
 } from './Contacts.styled';
 import { addContact } from '../../Redux/phonebook/phonebookOperation';
 import { getStoreContacts } from 'Redux/phonebook/phonebookSlice';
@@ -52,7 +53,7 @@ export function Contacts() {
   };
 
   return (
-    <div>
+    <Container>
       <h1>Phonebook</h1>
       <PhoneBook>
         <div>
@@ -87,7 +88,7 @@ export function Contacts() {
         </div>
       </PhoneBook>
       <h2>Contacts now</h2>
-    </div>
+    </Container>
   );
 }
 
