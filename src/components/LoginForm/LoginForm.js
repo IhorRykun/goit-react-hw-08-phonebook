@@ -1,4 +1,3 @@
-import { RegStyledSvg } from 'components/RegisterForm/RegisterForm.styled';
 import { useDispatch } from 'react-redux';
 import { logIn } from '../../Redux/Auth/AuthOperation';
 import {
