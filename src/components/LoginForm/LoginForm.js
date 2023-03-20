@@ -6,8 +6,6 @@ import {
   FormAuthorInput,
   FormAuthorLable,
   StyledSvgLogin,
-  SvgStyled,
-  SvgSytledEmail,
 } from './LoginForm.styled';
 
 export const LoginForm = () => {
@@ -29,12 +27,11 @@ export const LoginForm = () => {
     <FormAuthor onSubmit={handleSubmit} autoComplete="off">
       <StyledSvgLogin />
       <FormAuthorLable>
-        <SvgSytledEmail />
         Email
         <FormAuthorInput type="email" name="email" />
       </FormAuthorLable>
       <FormAuthorLable>
-        <SvgStyled /> Password
+        Password
         <FormAuthorInput type="password" name="password" />
       </FormAuthorLable>
       <ButtonStyled type="submit">Log In</ButtonStyled>

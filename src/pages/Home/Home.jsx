@@ -1,15 +1,13 @@
-import { ImgStyled } from './Home.styled';
+import { SectionStyled } from './Home.styled';
 
 export function Home() {
   return (
-    <section>
-      <div>
-        <h2>Phonebook manager welcome page</h2>
-        <ImgStyled
-          src="https://png.pngtree.com/element_our/20190528/ourmid/pngtree-phone-book-icon-image_1130237.jpg"
-          alt="phone"
-        />
-      </div>
-    </section>
+    <SectionStyled>
+      <h2>Phonebook manager welcome page</h2>
+      <img
+        src="https://st2.depositphotos.com/4441075/7502/v/600/depositphotos_75022325-stock-illustration-phone-book-icon.jpg"
+        alt=""
+      />
+    </SectionStyled>
   );
 }

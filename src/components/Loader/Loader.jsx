@@ -8,7 +8,7 @@ export function Loader() {
         height="80"
         width="80"
         radisu={1}
-        color="#3d8a81"
+        color="#2493eb"
         ariaLabel="puff-loading"
         wrapperStyle={{}}
         wrapperClass=""

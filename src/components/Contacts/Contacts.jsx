@@ -8,6 +8,7 @@ import {
   FormContact,
   BtnSubmit,
   Container,
+  SvgStyled,
 } from './Contacts.styled';
 import { addContact } from '../../Redux/phonebook/phonebookOperation';
 import { getStoreContacts } from 'Redux/phonebook/phonebookSlice';
@@ -58,6 +59,7 @@ export function Contacts() {
       <PhoneBook>
         <div>
           <FormContact action="" onSubmit={handleSubmit}>
+            <SvgStyled/>
             <Label>
               Name
               <Input
@@ -82,7 +84,6 @@ export function Contacts() {
                 onChange={handleChange}
               />
             </Label>
-
             <BtnSubmit type="submit">Add contact</BtnSubmit>
           </FormContact>
         </div>

@@ -1,6 +1,3 @@
-import { AiOutlineMail } from 'react-icons/ai';
-import { FaUserAlt } from 'react-icons/fa';
-import { RiLockPasswordFill } from 'react-icons/ri';
 import styled from 'styled-components';
 import { GiArchiveRegister } from 'react-icons/gi';
 
@@ -14,49 +11,53 @@ export const FormStyled = styled.form`
   margin: 0 auto;
   border-radius: 25px;
   align-items: center;
+  border-radius: 45px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2493eb;
 `;
 
 export const LableStyled = styled.label`
-  color: black;
-  margin-top: 30px;
   display: flex;
   align-items: center;
-  &:first-child {
-    margin-top: 0;
-  }
+  flex-direction: column;
+  margin-bottom: 20px;
 `;
 
 export const InputStyled = styled.input`
-  margin-left: 30px;
+  margin-left: 20px;
   border: none;
   border-bottom: 2px solid #2493eb;
   outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #2493eb;
+
   &:hover {
     outline: 2px solid #2493eb;
   }
-`;
-
-export const SvgStyled = styled(FaUserAlt)`
-  width: 30px;
-  margin-right: 7px;
-`;
-
-export const SvgSytledEmail = styled(AiOutlineMail)`
-  width: 30px;
-  height: 17px;
-  margin-right: 7px;
-`;
-
-export const SvgStyledPass = styled(RiLockPasswordFill)`
-  width: 30px;
-  margin-right: 7px;
-  margin-left: 26px;
 `;
 
 export const RegStyledSvg = styled(GiArchiveRegister)`
   width: 200px;
   height: 64px;
   fill: #2493eb;
+  margin-bottom: 30px;
 `;
 
 export const ButtonStyled = styled.button`
@@ -67,7 +68,16 @@ export const ButtonStyled = styled.button`
   border: 2px solid #2493eb;
   border-radius: 25px;
   background-color: white;
-  margin-top: 30px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2493eb;
   &:hover,
   &:focus {
     color: white;

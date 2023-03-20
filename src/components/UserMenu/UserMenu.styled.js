@@ -18,9 +18,19 @@ export const ButtonStyled = styled.button`
   border: 2px solid #2493eb;
   border-radius: 25px;
   background-color: white;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2493eb;
   &:hover,
   &:focus {
     color: white;
     background-color: red;
+    border: 2px solid red;
   }
 `;

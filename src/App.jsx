@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { Layout } from './Layout/Layout';
-import { Home } from './pages/Home/Home';
+// import { Home } from './pages/Home/Home';
 import { Register } from './pages/Register';
 import { Login } from './pages/Login/Login';
 import { PhoneBook } from 'pages/PhoneBook';
@@ -25,7 +25,7 @@ export function App() {
   ) : (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+        {/* <Route index element={<Home />} /> */}
         <Route
           path="/register"
           element={

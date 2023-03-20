@@ -6,9 +6,6 @@ import {
   InputStyled,
   LableStyled,
   RegStyledSvg,
-  SvgStyled,
-  SvgStyledPass,
-  SvgSytledEmail,
 } from './RegisterForm.styled';
 
 export const RegisterForm = () => {
@@ -30,23 +27,21 @@ export const RegisterForm = () => {
   };
 
   return (
-   <FormStyled onSubmit={handleSubmit} autoComplete="off">
-    <RegStyledSvg/>
-        <LableStyled>
-          <SvgStyled />
-          name
-          <InputStyled type="text" name="name" />
-        </LableStyled>
-        <LableStyled>
-          <SvgSytledEmail /> Email
-          <InputStyled type="email" name="email" />
-        </LableStyled>
-     <LableStyled>
-      <SvgStyledPass/>
-          Password
-          <InputStyled type="password" name="password" />
-        </LableStyled>
-        <ButtonStyled type="submit">Register</ButtonStyled>
-      </FormStyled>
+    <FormStyled onSubmit={handleSubmit} autoComplete="off">
+      <RegStyledSvg />
+      <LableStyled>
+        name
+        <InputStyled type="text" name="name" />
+      </LableStyled>
+      <LableStyled>
+        Email
+        <InputStyled type="email" name="email" />
+      </LableStyled>
+      <LableStyled>
+        Password
+        <InputStyled type="password" name="password" />
+      </LableStyled>
+      <ButtonStyled type="submit">Register</ButtonStyled>
+    </FormStyled>
   );
 };

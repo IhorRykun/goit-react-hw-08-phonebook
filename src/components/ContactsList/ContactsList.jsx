@@ -17,7 +17,6 @@ import {
 } from './ContactsList.styled';
 import { deleteContact } from '../../Redux/phonebook/phonebookOperation';
 
-
 export const ContactsList = () => {
   const contactsGallery = useSelector(getStoreContacts);
   const filter = useSelector(getStoreFilter);
